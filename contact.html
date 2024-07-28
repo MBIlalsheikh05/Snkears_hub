@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" type="image/x-icon" href="sneakers (1).png">
+    <style>
+        #contacts{
+            text-align: center;            
+            padding: -5%;
+            margin: 2%;
+        }
+
+        #contact h2, p{
+            font-size: 21px;
+        
+        }
+        #contact {
+      background-color:#E2E2B6;
+
+      padding:50px;
+      text-align: center;
+    }
+
+
+    /* #contact h2 {
+      margin-bottom: 20px;
+    } */
+
+    #contact label {
+      margin-bottom: 10px;
+    }
+
+    #contact input,
+    #contact textarea {
+      width: 45%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: azure;
+    }
+
+    #contact button {
+      padding: 10px 20px;
+    }
+    #contact button:hover{
+        background-color: rgb(215, 209, 215)
+
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact<sup style="font-size: 17px; color: lightgrey;"></sup></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mens.html">Mens Sneakers</a></li>
+                <li><a href="womens.html">Womens Sneakers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <input type="text" placeholder="Search">
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacts">
+        <h1 style="font-size: 35px;">We Are Here</h1>
+        <p>Drop your query or message if you have Any.</p>
+    </section>
+
+    <!-- <section id="contact" style="background-color: #9a9a7a;"> -->
+    <section id="contact" style="background-color: #727257;">
+        <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+        <label for="msg">Message:</label>
+        <textarea name="msg" id="msg" required></textarea>  
+        <button type="submit" class="btn">Submit</button>  
+    </form>
+  </section>
+
+    <footer>
+        <h3>© 2024 Shoes Shop. All rights reserved.</h3>
+    </footer>
+</body>
+</html>
